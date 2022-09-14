@@ -5,22 +5,23 @@
 
 > Crawling : 웹페이지를 방문해서 자료를 수집하는 일을 하는 프로그램
 
-## Request method
+## Request 매개변수
 
-- url(필수)
+### url(필수)
 > https://google.com
-- params(선택 사항)
+### params(선택 사항)
 tuple, dict 형식으로 매개변수에 넣으면 양식이 URL 인코딩이 되어 URL에 추가됩니다.
 > URL?key=value&key1=value
-- data(선택 사항)
+### data(선택 사항)
 tuple, dict 형식으로 매개변수에 넣으면 양식이 인코딩되어 요청 본문에 추가됩니다.
 > key=value&key1=value1
-- JSON(선택 사항)
+### JSON(선택 사항)
 JSON 매개변수를 이용하여 요청 본문에 json 형식으로 추가됩니다.
 > { 'key':'value', 'key1':'value1'}
-- return
+### return
 > put, get, post, head, patch, delete, options는 기본적으로 reqeusts.modules.Response 객체를 반환합니다.
 
+## Request methods
 1. PUT
 > requests.put(url, data=None, **kwargs)
 - put메소드는 요청 시 PUT 방식으로 요청되며 data 매개변수를 지원합니다.
